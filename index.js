@@ -18,9 +18,7 @@ date.innerHTML=(`${day} ${hour}:${minuet}`);
 
 function search(event) {
   event.preventDefault();
-  let city = document.querySelector("#main-city");
   let place = document.querySelector("#place-input");
-  city.innerHTML = `${place.value}`;
   searchCity(place.value);
 }
 
@@ -31,9 +29,14 @@ function searchCity(city) {
 }
 
 function showTemp(response) {
-  let temperature = Math.round(response.data.main.temp);
-  let currentDegree = document.querySelector(".degree");
-  currentDegree.innerHTML = `${temperature}°F`;
+  document.querySelector("#main-city").innerHTML = response.data.name;
+  document.querySelector("#degree-now").innerHTML = Math.round(
+    response.data.main.temp
+  );
+  document.querySelector("#humidity").innerHTML = response.data.main.humidity;
+  document.querySelector("#wind").innerHTML = Math.round(
+    response.data.wind.speed
+  );
 }
 let form = document.querySelector("#weather-form");
 form.addEventListener("submit", search);
