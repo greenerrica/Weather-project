@@ -23,9 +23,16 @@ function search(event) {
 }
 
 function searchCity(city) {
-  let apiKey = "5ef4de8cd6b7fefcd7c42f98cf464ce8";
+  let apiKey = "3f6be1c407b0d9d1933561808db358ba";
   let apiURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${apiKey}`;
   axios.get(apiURL).then(showTemp);
+}
+
+function getforcast(coordinates) {
+console.log(coordinates);
+let apiKey = "3f6be1c407b0d9d1933561808db358ba";
+let apiURL = `https://api.openweathermap.org/data/3.0/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=imperial`;
+console.log(apiURl)
 }
 
 function showTemp(response) {
@@ -40,6 +47,8 @@ function showTemp(response) {
   let iconElement = document.querySelector("#icon")
   iconElement.setAttribute("src", `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png` );
    document.querySelector("#description").innerHTML = response.data.weather[0].description;
+
+   getforcast(response.data.coord);
 }
 let form = document.querySelector("#weather-form");
 form.addEventListener("submit", search);
