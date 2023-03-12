@@ -29,11 +29,34 @@ function searchCity(city) {
 }
 
 function displayForecast(response){
-  console.log(response.data)
+  let forecast = response.data.daily;
+let forecastElement = document.querySelector("#forecast");
+forecastElement.innerHTML = `
+<div class="container text-center">
+            <div class="row row-cols-6">
+                <div class="col">Sun <br/>
+                <i class="fa-solid fa-sun sun-icon"></i> <br/>
+            ${forecast[0].temp.max}</div>
+                <div class="col">Mon <br/>
+                <i class="fa-solid fa-cloud-rain rain-icon"></i> <br/>
+            ${forecast[1].temp.max}</div>
+                <div class="col">Tus <br/>
+                <i class="fa-solid fa-cloud-sun cloudy-icon"></i> <br/>
+            ${forecast[2].temp.max}</div>
+                <div class="col">Wed <br/>
+                <i class="fa-solid fa-cloud-sun cloudy-icon"></i> <br/>
+        ${forecast[3].temp.max}</div>
+                <div class="col">Thur <br/>
+                <i class="fa-solid fa-cloud-sun cloudy-icon"></i> <br/>
+            ${forecast[4].temp.max}</div>
+                <div class="col">Fri <br/>
+                    <i class="fa-solid fa-cloud-rain rain-icon"></i> <br />
+                ${forecast[5].temp.max}</div>
+            </div>
+        </div>`;
 }
 
 function getforcast(coordinates) {
-console.log(coordinates);
 let apiKey = "3f6be1c407b0d9d1933561808db358ba";
 let apiURL = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=imperial`;
 axios.get(apiURL).then(displayForecast);
