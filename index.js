@@ -35,23 +35,23 @@ forecastElement.innerHTML = `
 <div class="container text-center">
             <div class="row row-cols-6">
                 <div class="col">Sun <br/>
-                <i class="fa-solid fa-sun sun-icon"></i> <br/>
-            ${forecast[0].temp.max}</div>
+                <img src="https://openweathermap.org/img/wn/${forecast[0].weather[0].icon}@2x.png" /> <br/>
+            ${forecast[0].temp.max}°</div>
                 <div class="col">Mon <br/>
-                <i class="fa-solid fa-cloud-rain rain-icon"></i> <br/>
-            ${forecast[1].temp.max}</div>
+                 <img src="https://openweathermap.org/img/wn/${forecast[1].weather[0].icon}@2x.png" /> <br/>
+            ${forecast[1].temp.max}°</div>
                 <div class="col">Tus <br/>
-                <i class="fa-solid fa-cloud-sun cloudy-icon"></i> <br/>
-            ${forecast[2].temp.max}</div>
+                 <img src="https://openweathermap.org/img/wn/${forecast[2].weather[0].icon}@2x.png" /> <br/>
+            ${forecast[2].temp.max}°</div>
                 <div class="col">Wed <br/>
-                <i class="fa-solid fa-cloud-sun cloudy-icon"></i> <br/>
-        ${forecast[3].temp.max}</div>
+                 <img src="https://openweathermap.org/img/wn/${forecast[3].weather[0].icon}@2x.png" /> <br/>
+        ${forecast[3].temp.max}°</div>
                 <div class="col">Thur <br/>
-                <i class="fa-solid fa-cloud-sun cloudy-icon"></i> <br/>
-            ${forecast[4].temp.max}</div>
+                 <img src="https://openweathermap.org/img/wn/${forecast[4].weather[0].icon}@2x.png" /> <br/>
+            ${forecast[4].temp.max}°</div>
                 <div class="col">Fri <br/>
-                    <i class="fa-solid fa-cloud-rain rain-icon"></i> <br />
-                ${forecast[5].temp.max}</div>
+                     <img src="https://openweathermap.org/img/wn/${forecast[5].weather[0].icon}@2x.png" /> <br />
+                ${forecast[5].temp.max}°</div>
             </div>
         </div>`;
 }
