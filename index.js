@@ -35,22 +35,22 @@ forecastElement.innerHTML = `
 <div class="container text-center">
             <div class="row row-cols-6">
                 <div class="col">Sun <br/>
-                <img src="https://openweathermap.org/img/wn/${forecast[0].weather[0].icon}@2x.png" /> <br/> ${Math.round(forecast[0].temp.min)}°|
+                <img src="https://openweathermap.org/img/wn/${forecast[0].weather[0].icon}@2x.png" alt="Icon" width="50"/> <br/> ${Math.round(forecast[0].temp.min)}°|
             ${Math.round(forecast[0].temp.max)}°</div>
                 <div class="col">Mon <br/>
-                 <img src="https://openweathermap.org/img/wn/${forecast[1].weather[0].icon}@2x.png" /> <br/> ${Math.round(forecast[1].temp.min)}°|
+                 <img src="https://openweathermap.org/img/wn/${forecast[1].weather[0].icon}@2x.png" alt="Icon" width="50"/> <br/> ${Math.round(forecast[1].temp.min)}°|
             ${Math.round(forecast[1].temp.max)}°</div>
                 <div class="col">Tus <br/>
-                 <img src="https://openweathermap.org/img/wn/${forecast[2].weather[0].icon}@2x.png" /> <br/> ${Math.round(forecast[2].temp.min)}°|
+                 <img src="https://openweathermap.org/img/wn/${forecast[2].weather[0].icon}@2x.png" alt="Icon" width="50" /> <br/> ${Math.round(forecast[2].temp.min)}°|
             ${Math.round(forecast[2].temp.max)}°</div>
                 <div class="col">Wed <br/>
-                 <img src="https://openweathermap.org/img/wn/${forecast[3].weather[0].icon}@2x.png" /> <br/> ${Math.round(forecast[3].temp.min)}°|
+                 <img src="https://openweathermap.org/img/wn/${forecast[3].weather[0].icon}@2x.png" alt="Icon" width="50" /> <br/> ${Math.round(forecast[3].temp.min)}°|
         ${Math.round(forecast[3].temp.max)}°</div>
                 <div class="col">Thur <br/>
-                 <img src="https://openweathermap.org/img/wn/${forecast[4].weather[0].icon}@2x.png" /> <br/> ${Math.round(forecast[4].temp.min)}°|
+                 <img src="https://openweathermap.org/img/wn/${forecast[4].weather[0].icon}@2x.png" alt="Icon" width="50" /> <br/> ${Math.round(forecast[4].temp.min)}°|
             ${Math.round(forecast[4].temp.max)}°</div>
                 <div class="col">Fri <br/>
-                     <img src="https://openweathermap.org/img/wn/${forecast[5].weather[0].icon}@2x.png" /> <br /> ${Math.round(forecast[5].temp.min)}°|
+                     <img src="https://openweathermap.org/img/wn/${forecast[5].weather[0].icon}@2x.png" alt="Icon" width="50" /> <br /> ${Math.round(forecast[5].temp.min)}°|
                 ${Math.round(forecast[5].temp.max)}°</div>
             </div>
         </div>`;
