@@ -29,8 +29,19 @@ h4 {
     border: 3px solid palevioletred;
 }
 h2 {
-    font-size: 25px;
+    font-size: 30px;
 }
 h3 {
-    font-size: 25px;
+    font-size: 20px;
+}
+p {
+    text-align: center;
+    font-size: 30px;
+}
+
+ul {
+    list-style-type: none;
+    position: absolute;
+    top: 300px;
+    right: 550px;
 }
