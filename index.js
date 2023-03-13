@@ -28,28 +28,35 @@ function searchCity(city) {
   axios.get(apiURL).then(showTemp);
 }
 
+function formatDay(timestamp)
+{
+let date = new Date(timestamp * 1000);
+let day = date.getDay();
+let days = ["Sun", "Mon", "Tue", "Wed", "thu", "Fri", "Sat"];
+return days[day];
+}
 function displayForecast(response){
   let forecast = response.data.daily;
 let forecastElement = document.querySelector("#forecast");
 forecastElement.innerHTML = `
 <div class="container text-center">
             <div class="row row-cols-6">
-                <div class="col">Sun <br/>
+                <div class="col">${formatDay(forecast[0].dt)} <br/>
                 <img src="https://openweathermap.org/img/wn/${forecast[0].weather[0].icon}@2x.png" alt="Icon" width="50"/> <br/> ${Math.round(forecast[0].temp.min)}°|
             ${Math.round(forecast[0].temp.max)}°</div>
-                <div class="col">Mon <br/>
+                <div class="col">${formatDay(forecast[1].dt)} <br/>
                  <img src="https://openweathermap.org/img/wn/${forecast[1].weather[0].icon}@2x.png" alt="Icon" width="50"/> <br/> ${Math.round(forecast[1].temp.min)}°|
             ${Math.round(forecast[1].temp.max)}°</div>
-                <div class="col">Tus <br/>
+                <div class="col">${formatDay(forecast[2].dt)} <br/>
                  <img src="https://openweathermap.org/img/wn/${forecast[2].weather[0].icon}@2x.png" alt="Icon" width="50" /> <br/> ${Math.round(forecast[2].temp.min)}°|
             ${Math.round(forecast[2].temp.max)}°</div>
-                <div class="col">Wed <br/>
+                <div class="col">${formatDay(forecast[3].dt)} <br/>
                  <img src="https://openweathermap.org/img/wn/${forecast[3].weather[0].icon}@2x.png" alt="Icon" width="50" /> <br/> ${Math.round(forecast[3].temp.min)}°|
         ${Math.round(forecast[3].temp.max)}°</div>
-                <div class="col">Thur <br/>
+                <div class="col">${formatDay(forecast[4].dt)} <br/>
                  <img src="https://openweathermap.org/img/wn/${forecast[4].weather[0].icon}@2x.png" alt="Icon" width="50" /> <br/> ${Math.round(forecast[4].temp.min)}°|
             ${Math.round(forecast[4].temp.max)}°</div>
-                <div class="col">Fri <br/>
+                <div class="col">${formatDay(forecast[5].dt)} <br/>
                      <img src="https://openweathermap.org/img/wn/${forecast[5].weather[0].icon}@2x.png" alt="Icon" width="50" /> <br /> ${Math.round(forecast[5].temp.min)}°|
                 ${Math.round(forecast[5].temp.max)}°</div>
             </div>
