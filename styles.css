@@ -6,22 +6,6 @@ h1 {
     padding: 40px;
     font-size: 30px;
 }
-.cloud-icon {
-    color: gray;
-    font-size: 50px;
-}
-.degree {
-    font-size: 40px;
-}
-.sun-icon {
-    color: black;
-}
-.cloudy-icon {
-    color: rgb(234, 196, 131);
-}
-.rain-icon {
-    color: rgb(99, 99, 212);
-}
 h4 {
     text-align: center;
 }
