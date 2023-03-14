@@ -34,7 +34,7 @@ p {
 ul {
     list-style-type: none;
     position: absolute;
-    top: 320px;
+    top: 315px;
     right: 550px;
     color: rgb(229, 36, 229);
 }
@@ -50,4 +50,7 @@ ul {
     background-color: rgb(236, 87, 137);
     border: 1px solid plum;
     color: plum;
+}
+h2 {
+   color:  rgb(229, 36, 229);
 }
