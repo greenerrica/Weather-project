@@ -4,8 +4,9 @@ body {
 h1 {
     text-align: center;
     padding: 40px;
-    font-size: 30px;
+    font-size: 40px;
     color: rgb(229, 36, 229);
+    font-family: 'Great Vibes', cursive;
 }
 h4 {
     text-align: center;
@@ -18,39 +19,49 @@ h4 {
 }
 .date {
     text-align: left;
-    font-size: 20px;
-    color: rgb(229, 36, 229);
+    font-size: 25px;
+    color: rgba(161, 4, 161, 0.889);
+    font-family: 'Great Vibes', cursive;
 }
 h3 {
-    font-size: 17px;
-    color: rgb(229, 36, 229);
+    font-size: 20px;
+    color: rgba(161, 4, 161, 0.889);
+    font-family: 'Great Vibes', cursive;
 }
 p {
     text-align: center;
-    font-size: 40px;
-    color: rgb(229, 36, 229);
+    font-size: 50px;
+    color: rgba(161, 4, 161, 0.889);
+    font-family: 'Great Vibes', cursive;
 }
 
 ul {
     list-style-type: none;
     position: absolute;
-    top: 315px;
-    right: 550px;
-    color: rgb(229, 36, 229);
+    top: 355px;
+    right: 500px;
+    color: rgba(161, 4, 161, 0.889);
+    font-family: 'Great Vibes', cursive;
+    font-size: 20px;
 }
 .main-city {
     font-size: 50px;
-    color: rgb(229, 36, 229);
+    color: rgba(161, 4, 161, 0.889);
+    font-family: 'Great Vibes', cursive;
 }
 .degree{
-    font-size: 50;
-    color: rgb(229, 36, 229);
+    font-size: 50px;
+    color: rgba(161, 4, 161, 0.889);
+    font-family: 'Great Vibes', cursive;
 }
 .button {
-    background-color: rgb(236, 87, 137);
-    border: 1px solid plum;
-    color: plum;
+    background-color: white;
+    border: 1px solid rgba(161, 4, 161, 0.889);
+    color: rgba(161, 4, 161, 0.889);
+    font-family: 'Great Vibes', cursive;
 }
 h2 {
-   color:  rgb(229, 36, 229);
+   color: rgba(161, 4, 161, 0.889);
+font-family: 'Great Vibes', cursive;
+font-size: 50px;
 }
