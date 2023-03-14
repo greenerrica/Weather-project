@@ -28,15 +28,16 @@ h4 {
     padding: 20px;
     border: 3px solid palevioletred;
 }
-h2 {
-    font-size: 30px;
+.date {
+    text-align: left;
+    font-size: 20px;
 }
 h3 {
     font-size: 17px;
 }
 p {
     text-align: center;
-    font-size: 30px;
+    font-size: 40px;
 }
 
 ul {
@@ -44,4 +45,10 @@ ul {
     position: absolute;
     top: 320px;
     right: 550px;
+}
+.main-city {
+    font-size: 50px;
+}
+.degree{
+    font-size: 50;
 }
