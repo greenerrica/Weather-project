@@ -56,8 +56,8 @@ ul {
 }
 .button {
     background-color: white;
-    border: 1px solid rgba(161, 4, 161, 0.889);
-    color: rgba(161, 4, 161, 0.889);
+    border: 1px solid black;
+    color: rgb(132, 128, 128);
     font-family: 'Great Vibes', cursive;
     font-size: 40px;
 }
