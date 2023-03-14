@@ -5,6 +5,7 @@ h1 {
     text-align: center;
     padding: 40px;
     font-size: 30px;
+    color: rgb(229, 36, 229);
 }
 h4 {
     text-align: center;
@@ -18,13 +19,16 @@ h4 {
 .date {
     text-align: left;
     font-size: 20px;
+    color: rgb(229, 36, 229);
 }
 h3 {
     font-size: 17px;
+    color: rgb(229, 36, 229);
 }
 p {
     text-align: center;
     font-size: 40px;
+    color: rgb(229, 36, 229);
 }
 
 ul {
@@ -32,10 +36,18 @@ ul {
     position: absolute;
     top: 320px;
     right: 550px;
+    color: rgb(229, 36, 229);
 }
 .main-city {
     font-size: 50px;
+    color: rgb(229, 36, 229);
 }
 .degree{
     font-size: 50;
+    color: rgb(229, 36, 229);
+}
+.button {
+    background-color: rgb(236, 87, 137);
+    border: 1px solid plum;
+    color: plum;
 }
